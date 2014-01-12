@@ -28,11 +28,23 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 
-gem 'devise_oauth2_providable'
+
+gem 'devise'
+gem 'omniauth'
+gem 'omniauth-vkontakte'
+
+gem 'protected_attributes'
+gem 'localtunnel'
+gem 'haml-rails'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
+end
+
+group :development do
+  gem "better_errors"
+  gem "binding_of_caller"
 end
 
 # Use ActiveModel has_secure_password
