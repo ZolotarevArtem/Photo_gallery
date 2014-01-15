@@ -41,13 +41,15 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
-group :production do
-  gem 'pg'
-end
+
 group :development do
   gem "better_errors"
   gem "binding_of_caller"
   gem 'sqlite3'
+end
+
+group :production do
+	gem 'pg'
 end
 
 # Use ActiveModel has_secure_password
