@@ -1,6 +1,6 @@
 class Users::OmniauthCallbacksController < ApplicationController
   def vkontakte
-    puts request.env.inspect
+    puts request.env['omniauth.auth'].inspect
     @user = User.find_for_vkontakte_oauth request.env["omniauth.auth"]
 
     if @user.persisted?
