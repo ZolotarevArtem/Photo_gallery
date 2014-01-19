@@ -10,7 +10,7 @@ class User < ActiveRecord::Base
 
 
   def self.find_for_vkontakte_oauth access_token
-    puts access_token.extra.raw_info.domain.inspect
+    puts access_token.info.name
     if user = User.where(:url => access_token.info.urls.Vkontakte).first
       user
     else 
