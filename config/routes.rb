@@ -3,6 +3,8 @@ Photo::Application.routes.draw do
   resources :users, :only => [:index, :destroy]
   root :to => 'users#index'
 
+  get '/authorization' => 'users#authorization', as: :authorization 
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

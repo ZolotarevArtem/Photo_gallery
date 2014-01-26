@@ -6,14 +6,25 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <link href="/css/style.css" rel="stylesheet">
+    <!--link href="/css/style.css" rel="stylesheet"-->
     <link href="/css/bootstrap.css" rel="stylesheet">
     <link href="/css/blog-post.css" rel="stylesheet">
   </head>
   <body>
 
-  <li><%= link_to "Sign in with Vkontakte", user_omniauth_authorize_path(:vkontakte) %></li>
-  <%= yield %>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">      
+      <div class="container">
+        <!--a class="brand brand-locate" href="/">На главную</a-->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav">
+            <li><%= button_to 'Авторизация', authorization_path, class: "btn btn-primary", method: 'get' %></li>  
+          </ul> 
+        </div><!--/.nav-collapse -->
+      </div>      
+    </nav>	
+
+  	
+  	<%= yield %>
 
 
   <!-- JavaScript -->

@@ -1,0 +1,6 @@
+<h2>Авторизация</h2>
+<p>Вы можете войти, используя свой профиль в VK</p>
+<%= link_to "Vkontakte", user_omniauth_authorize_path(:vkontakte) %>
+<p>Или как пользователь сайта</p>
+<%= link_to "Войти", new_user_session_path %>
+<p>Если у вас нигде нет аккаунта, то, пожалуйста, <%= link_to "зарегистрируйтeсь", new_user_registration_path %></p>
