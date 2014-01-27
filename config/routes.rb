@@ -4,7 +4,8 @@ Photo::Application.routes.draw do
   resources :users, :only => [:index, :destroy]
   root :to => 'welcome#index'
 
-  get '/authorization' => 'users#authorization', as: :authorization 
+  get '/authorization' => 'users#authorization', as: :authorization
+  get '/users/profile' => 'users#profile', as: :profile 
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

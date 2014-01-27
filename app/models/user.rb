@@ -18,6 +18,7 @@ class User < ActiveRecord::Base
                           username:access_token.info.name,
                           nickname:access_token.extra.raw_info.domain,
                           email:access_token.uid+'@vk.com',
+                          image: access_token.info.image,
                           password:Devise.friendly_token[0,20] )
     end
   end
