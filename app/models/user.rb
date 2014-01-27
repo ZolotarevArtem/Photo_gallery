@@ -12,7 +12,8 @@ class User < ActiveRecord::Base
   def self.find_for_vkontakte_oauth access_token
     if user = User.where(url:access_token.info.urls.Vkontakte).first
       user
-    else 
+    else
+      access_token.info.image.inspect
       user = User.create( provider:access_token.provider, 
                           url:access_token.info.urls.Vkontakte,
                           username:access_token.info.name,
