@@ -1,0 +1,163 @@
+commit b6aadc9ff618c7667bc3eca9c702d55a8aece036
+Author: Rebelition <rebelition@rebelition-MS-16G1.(none)>
+Date:   Sun Jan 26 15:05:35 2014 +0700
+
+    add authorization
+
+commit 5740ff6d4cbd9be4c0eeb7f0b79cfb77d1c5c00c
+Author: Rebelition <rebelition@rebelition-MS-16G1.(none)>
+Date:   Sun Jan 26 13:48:11 2014 +0700
+
+    connected bootstrap
+
+commit 5dc638606e692b0c8f3153775949e02c408b9e06
+Author: Rebelition <rebelition@rebelition-MS-16G1.(none)>
+Date:   Thu Jan 23 12:41:07 2014 +0700
+
+    fix email
+
+commit fa59c2ec07bd76358b658a52d6e07efeab30be6f
+Author: Rebelition <rebelition@rebelition-MS-16G1.(none)>
+Date:   Thu Jan 23 12:38:45 2014 +0700
+
+    fix email
+
+commit 38ec8cb07a8b68567b938161a312de23b0eea6c9
+Author: Rebelition <rebelition@rebelition-MS-16G1.(none)>
+Date:   Sun Jan 19 15:05:39 2014 +0700
+
+    add email
+
+commit ae2a86b226af85be08777adc3285c948ec353dff
+Merge: 318144b 32c8177
+Author: Rebelition <rebelition@rebelition-MS-16G1.(none)>
+Date:   Sun Jan 19 14:36:19 2014 +0700
+
+    Merge https://github.com/Feanaur/Photo_gallery
+
+commit 318144b641370d168715e2feb80253509254658d
+Author: Rebelition <rebelition@rebelition-MS-16G1.(none)>
+Date:   Sun Jan 19 14:20:02 2014 +0700
+
+    show username
+
+commit 32c81779e8937388d9b27176bd056725715125f5
+Author: Feanaur <feanaur2193@gmail.com>
+Date:   Wed Jan 15 17:42:19 2014 +0700
+
+    Email Vypilen
+
+commit 6e57da9ec3c0df5ffb4f88444b568486f1c4c0a7
+Author: Feanaur <feanaur2193@gmail.com>
+Date:   Wed Jan 15 17:26:08 2014 +0700
+
+    Fixin rollback in migration
+
+commit b8d56eb5a348adeb18ce2385db54b13e47fecd12
+Author: Feanaur <feanaur2193@gmail.com>
+Date:   Wed Jan 15 17:05:51 2014 +0700
+
+    User.inspect debug
+
+commit 824a99b94bdb1fda9a37ce3d6f7cd064719b2185
+Author: Feanaur <feanaur2193@gmail.com>
+Date:   Wed Jan 15 17:00:47 2014 +0700
+
+    Request for user email deleted
+
+commit 97ee65c1f28857f5234b7864d81582bd4f285cd4
+Merge: eeb3cd7 7f99dd0
+Author: Feanaur <feanaur2193@gmail.com>
+Date:   Wed Jan 15 16:52:17 2014 +0700
+
+    Heroku remote deploy change
+
+commit eeb3cd70a60c659c828d2925a9e99abce83675f9
+Author: Feanaur <feanaur2193@gmail.com>
+Date:   Wed Jan 15 16:29:11 2014 +0700
+
+    Initial
+
+commit 7f99dd04f4b5cadafd2614ffd7507522ee3fb458
+Author: Rebelition <rebelition@rebelition-MS-16G1.(none)>
+Date:   Wed Jan 15 16:18:41 2014 +0700
+
+    inspect nil
+
+commit d5cd7b56ed40f410ce8ea9f97660bdc27792666e
+Author: Rebelition <rebelition@rebelition-MS-16G1.(none)>
+Date:   Wed Jan 15 16:08:26 2014 +0700
+
+    omniauth.auth
+
+commit 1f2ac6fc97b3396c004a28c78d2d1dfae45abe20
+Author: Rebelition <rebelition@rebelition-MS-16G1.(none)>
+Date:   Wed Jan 15 15:55:04 2014 +0700
+
+    new app 3
+
+commit 62c492942da427c15c86b1be3b8e7abcb55ba1c8
+Author: Rebelition <rebelition@rebelition-MS-16G1.(none)>
+Date:   Wed Jan 15 15:51:58 2014 +0700
+
+    new app
+
+commit ee48c5d48d0490545a110c72e03ad640d989c61c
+Author: Rebelition <rebelition@rebelition-MS-16G1.(none)>
+Date:   Wed Jan 15 15:34:42 2014 +0700
+
+    new app
+
+commit 40c934faf9fa663934f386125481392ef112eab4
+Author: Rebelition <rebelition@rebelition-MS-16G1.(none)>
+Date:   Mon Jan 13 01:01:45 2014 +0700
+
+    fix
+
+commit 59ee9f9eb5b106ae30de2647651f3d80d649cd25
+Author: Rebelition <rebelition@rebelition-MS-16G1.(none)>
+Date:   Mon Jan 13 00:40:11 2014 +0700
+
+    gemfile production
+
+commit 1fd1a24a545393ec8f5370fd498b8f1fd471e478
+Author: Rebelition <rebelition@rebelition-MS-16G1.(none)>
+Date:   Mon Jan 13 00:27:40 2014 +0700
+
+    gemfile production
+
+commit 56151317b078183c62742aa25dc292baf46262d3
+Author: Rebelition <rebelition@rebelition-MS-16G1.(none)>
+Date:   Mon Jan 13 00:11:27 2014 +0700
+
+    gemfile production
+
+commit df1cca4144c6f168fd594b0ff6336ff0ff4db33c
+Author: Rebelition <rebelition@rebelition-MS-16G1.(none)>
+Date:   Sun Jan 12 23:45:40 2014 +0700
+
+    gemfile production
+
+commit 16f944156e03ad901a857136782db7dbe3842593
+Author: Rebelition <rebelition@rebelition-MS-16G1.(none)>
+Date:   Sun Jan 12 23:41:58 2014 +0700
+
+    gemfile production
+
+commit 9d9f2796b7d67a554820e99d5315e62f0459e688
+Author: Rebelition <rebelition@rebelition-MS-16G1.(none)>
+Date:   Sun Jan 12 23:38:53 2014 +0700
+
+    gemfile pg
+
+commit 48ba2a5f6ac4787d6995bce3d40f024e2d8aa4cd
+Author: Rebelition <rebelition@rebelition-MS-16G1.(none)>
+Date:   Sun Jan 12 23:34:58 2014 +0700
+
+    add register
+
+commit bf35d32a14549d509b023b9a5f46d7fc3e5f2262
+Author: Rebelition <rebelition@rebelition-MS-16G1.(none)>
+Date:   Thu Jan 9 14:56:45 2014 +0700
+
+    add project
