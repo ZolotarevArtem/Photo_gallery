@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20140109175938) do
     t.string   "provider"
     t.string   "url"
     t.string   "image"
+    t.string   "uid"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "email",                  default: "", null: false

@@ -1,7 +1,7 @@
 <h1>Личный кабинет</h1>
 <% if user_signed_in? %>
 	<%= current_user.username %>
-	<%=current_user.image%>
+	<img src="<%=current_user.image%>" alt="Here should be avatar">
 <% else %>
 	<p>Вы не вошли</p>
 <% end %>

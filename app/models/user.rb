@@ -4,9 +4,14 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable, :omniauthable
 
+  include RoleModel
+  attr_accessible :email, :password, :password_confirmation, :remember_me, :roles, :roles_mask 
+  roles_attribute :roles_mask
+  roles :admin, :editor, :guest
+
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me
-  attr_accessible :nickname, :provider, :url, :username, :image
+  attr_accessible :nickname, :provider, :url, :username, :image, :uid
 
 
   def self.find_for_vkontakte_oauth access_token
@@ -15,11 +20,13 @@ class User < ActiveRecord::Base
     else
       user = User.create( provider:access_token.provider, 
                           url:access_token.info.urls.Vkontakte,
+                          uid:access_token.uid,
                           username:access_token.info.name,
                           nickname:access_token.extra.raw_info.domain,
                           email:access_token.uid+'@vk.com',
                           image: access_token.info.image,
                           password:Devise.friendly_token[0,20] )
+      user.roles = [:editor]
     end
   end
   
