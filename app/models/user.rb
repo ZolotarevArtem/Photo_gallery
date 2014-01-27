@@ -4,14 +4,15 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable, :omniauthable
 
-
+  # Setup accessible (or protected) attributes for your model
+  attr_accessible :email, :password, :password_confirmation, :remember_me
+  attr_accessible :nickname, :provider, :url, :username, :image
 
 
   def self.find_for_vkontakte_oauth access_token
     if user = User.where(url:access_token.info.urls.Vkontakte).first
       user
     else
-      access_token.info.image.inspect
       user = User.create( provider:access_token.provider, 
                           url:access_token.info.urls.Vkontakte,
                           username:access_token.info.name,
