@@ -7,11 +7,11 @@ class User < ActiveRecord::Base
   include RoleModel
   attr_accessible :email, :password, :password_confirmation, :remember_me, :roles, :roles_mask 
   roles_attribute :roles_mask
-  roles :admin, :editor, :guest
+  roles :admin, :editor
 
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me
-  attr_accessible :nickname, :provider, :url, :username, :image, :uid
+  attr_accessible :nickname, :provider, :url, :username, :image, :uid, :admin, :editor
 
 
   def self.find_for_vkontakte_oauth access_token
@@ -25,8 +25,8 @@ class User < ActiveRecord::Base
                           nickname:access_token.extra.raw_info.domain,
                           email:access_token.uid+'@vk.com',
                           image: access_token.info.image,
-                          password:Devise.friendly_token[0,20] )
-      user.roles = [:editor]
+                          password:Devise.friendly_token[0,20],
+                          roles:[:editor] )
     end
   end
   
