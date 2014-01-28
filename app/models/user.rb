@@ -4,6 +4,8 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable, :omniauthable
 
+  has_many :foto
+
   include RoleModel
   attr_accessible :email, :password, :password_confirmation, :remember_me, :roles, :roles_mask 
   roles_attribute :roles_mask

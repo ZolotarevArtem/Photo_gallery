@@ -32,6 +32,7 @@ gem 'omniauth'
 gem 'omniauth-vkontakte'
 gem 'cancan'
 gem 'role_model'
+gem 'paperclip'
 
 gem 'protected_attributes'
 gem 'localtunnel'
