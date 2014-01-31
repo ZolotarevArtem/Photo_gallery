@@ -8,7 +8,7 @@ class Ability
     if user.has_role? :admin
       can :manage, :all
     elsif user.has_role? :editor
-      can :manage
+      can :manage, :all
     end
     #
     # The first argument to `can` is the action you are giving the user 

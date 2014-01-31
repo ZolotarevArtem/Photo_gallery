@@ -1,1 +1,8 @@
 <h1>Welcome</h1>
+  <%= form_for @picture, :html => { :multipart => true } do |f| %>
+  <div class="field">
+    <%= f.label :picture %>
+    <%= f.file_field :pic%></br>
+    <%= f.submit %>
+  </div>
+<% end %>

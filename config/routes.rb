@@ -2,6 +2,7 @@ Photo::Application.routes.draw do
   get "welcome/index"
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
   resources :users, :only => [:index, :destroy]
+  resources :pictures
   root :to => 'welcome#index'
 
   get '/authorization' => 'users#authorization', as: :authorization

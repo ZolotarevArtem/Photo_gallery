@@ -5,3 +5,6 @@
 <% else %>
 	<p>Вы не вошли</p>
 <% end %>
+
+<%= current_user.pictures %>
+<%= image_tag current_user.pictures %>
